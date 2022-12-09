@@ -24,7 +24,7 @@ pipeline {
                 bat "echo Tarea Desplegar en servidor de produccion Iniciada correctamente"
             }
             failure{
-                bat "curl http://localhost:8080/job/job_122022/job/Notificar/build?token=notificarnook"
+                bat "curl http://localhost:8080/job/job_122022/job/Despeglar_en_pruebas/build?token=desplegarpruebas"
                 bat "echo Tarea notificar al correo Iniciada correctamente"
             }
         }
