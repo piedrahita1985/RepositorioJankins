@@ -20,12 +20,13 @@ pipeline {
     }
     post{
             success{
-                bat "curl http://localhost:8080/job/job_122022/job/Despeglar_en_produccion/build?token=desplegarproduccion"
+                bat "curl http://apiedrahita:PabloMiguel208*@localhost:8080/job/job_122022/job/Despeglar_en_produccion/build?token=desplegarproduccion"
                 bat "echo Tarea Desplegar en servidor de produccion Iniciada correctamente"
             }
             failure{
-                bat "curl http://localhost:8080/job/job_122022/job/Despeglar_en_pruebas/build?token=desplegarpruebas"
+                bat "curl http://apiedrahita:PabloMiguel208*@localhost:8080/job/job_122022/job/Despeglar_en_pruebas/build?token=desplegarpruebas"
                 bat "echo Tarea notificar al correo Iniciada correctamente"
             }
         }
 }
+curl http://Usuario:Password@localhost:8080/[LinkTArea]
