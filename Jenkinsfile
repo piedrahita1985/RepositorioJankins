@@ -29,4 +29,3 @@ pipeline {
             }
         }
 }
-curl http://Usuario:Password@localhost:8080/[LinkTArea]
